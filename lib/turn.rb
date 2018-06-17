@@ -36,7 +36,8 @@ def turn(board)
   user_input = 0
   until user_input.between?(1, 9)
     print "Please enter 1-9:"
-    user_input = input_to_index(gets.strip)
+    user_input = gets.strip
+    input_to_index(user_input)
   end
 
 

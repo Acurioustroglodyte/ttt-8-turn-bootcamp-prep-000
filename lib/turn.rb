@@ -34,7 +34,7 @@ end
 def turn(board)
   # Validate user input
   user_input = 0
-  until user_input.between?(1, 9)
+  until input_to_index(user_input).between?(1, 9)
     puts "Please enter 1-9:"
     user_input = gets.strip
   end
